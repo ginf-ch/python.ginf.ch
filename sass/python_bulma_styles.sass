@@ -1,0 +1,24 @@
+@charset "utf-8"
+
+$primary: #306998
+$link: #4B8BBE
+$code: #000000
+$light: #e1e1e1
+
+// Image Size Dimensions
+$dimensions: 16 24 32 48 64 96 128 256 512
+
+@media (hover: hover)
+  .hero.is-primary
+    background-attachment: fixed
+
+@media (hover: none)
+  .hero.is-primary
+    background-attachment: scroll
+
+@import "../bulma/bulma.sass"
+
+@media(max-width: $tablet)
+  .reverse-columns
+    flex-direction: column-reverse
+    display: flex

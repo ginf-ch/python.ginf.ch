@@ -1,0 +1,21 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.tutorial-img {
+    box-shadow: rgba(0, 0, 0, 0.15) 0 15px 25px, rgba(0, 0, 0, 0.05) 0 5px 10px;
+    border-radius: 5px;
+}
+
+.hero.is-primary {
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.1)
+    ), url('../images/frank_albrecht_zitrone_unsplash.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}

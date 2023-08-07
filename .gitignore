@@ -1,6 +1,20 @@
 # Created by https://www.toptal.com/developers/gitignore/api/phpstorm+all,macos,windows
 # Edit at https://www.toptal.com/developers/gitignore?templates=phpstorm+all,macos,windows
 
+# Created by https://www.toptal.com/developers/gitignore/api/sass
+# Edit at https://www.toptal.com/developers/gitignore?templates=sass
+
+### bulma.io ###
+bulma
+
+### Sass ###
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+
+# End of https://www.toptal.com/developers/gitignore/api/sass
+
 ### macOS ###
 # General
 .DS_Store
