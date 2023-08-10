@@ -16,46 +16,10 @@ $faviconsBasePath = "https://" . $_SERVER['SERVER_NAME'] . "/favicons/";
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 <script>
     document.addEventListener('DOMContentLoaded', () => {
-        if (window.location.hash) {
-            const link = window.location.hash.substring(1);
-            if (link.startsWith("windows")) {
-                const win = document.getElementById("windows");
-                win.style.display = "block"
-                let windowstab = document.getElementById("windows-tab-desktop");
-                if (windowstab != null && windowstab.offsetParent === null) {
-                    windowstab = document.getElementById("windows-tab-mobile");
-                }
-                windowstab.classList.add("is-active");
-                let macostab = document.getElementById("macos-tab-desktop");
-                if (macostab != null && macostab.offsetParent === null) {
-                    macostab = document.getElementById("macos-tab-mobile");
-                }
-                macostab.classList.remove("is-active");
-
-                AOS.init({
-                    once: true,
-                    disable: "phone"
-                });
-            } else if (link.startsWith("macos")) {
-                const mac = document.getElementById("macos");
-                mac.style.display = "block"
-                let macostab = document.getElementById("macos-tab-desktop");
-                if (macostab != null && macostab.offsetParent === null) {
-                    macostab = document.getElementById("macos-tab-mobile");
-                }
-                macostab.classList.add("is-active");
-                let windowstab = document.getElementById("windows-tab-desktop");
-                if (windowstab != null && windowstab.offsetParent === null) {
-                    windowstab = document.getElementById("windows-tab-mobile");
-                }
-                windowstab.classList.remove("is-active");
-
-                AOS.init({
-                    once: true,
-                    disable: "phone"
-                });
-            }
-        }
+        AOS.init({
+            once: true,
+            disable: "phone"
+        });
     });
 
     document.addEventListener("DOMContentLoaded", () => {
@@ -99,50 +63,5 @@ $faviconsBasePath = "https://" . $_SERVER['SERVER_NAME'] . "/favicons/";
             }
         });
     });
-
-    function hide_windows() {
-        const win = document.getElementById("windows");
-        win.style.display = "none";
-        const mac = document.getElementById("macos");
-        mac.style.display = "block";
-        let macostab = document.getElementById("macos-tab-desktop");
-        if (macostab != null && macostab.offsetParent === null) {
-            macostab = document.getElementById("macos-tab-mobile");
-        }
-        macostab.classList.add("is-active");
-        let windowstab = document.getElementById("windows-tab-desktop");
-        if (windowstab != null && windowstab.offsetParent === null) {
-            windowstab = document.getElementById("windows-tab-mobile");
-        }
-        windowstab.classList.remove("is-active");
-
-        AOS.init({
-            once: true,
-            disable: "phone"
-        });
-
-    }
-
-    function hide_macos() {
-        const win = document.getElementById("windows");
-        win.style.display = "block";
-        const mac = document.getElementById("macos");
-        mac.style.display = "none";
-        let windowstab = document.getElementById("windows-tab-desktop");
-        if (windowstab != null && windowstab.offsetParent === null) {
-            windowstab = document.getElementById("windows-tab-mobile");
-        }
-        windowstab.classList.add("is-active");
-        let macostab = document.getElementById("macos-tab-desktop");
-        if (macostab != null && macostab.offsetParent === null) {
-            macostab = document.getElementById("macos-tab-mobile");
-        }
-        macostab.classList.remove("is-active");
-
-        AOS.init({
-            once: true,
-            disable: "phone"
-        });
-    }
 </script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>

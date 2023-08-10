@@ -1,3 +1,12 @@
+<?php
+$os = $_GET["os"];
+if (isset($os)) {
+    if ($os != "macos" and $os != "windows") {
+        header('Location: https://ide.ginf.ch/#', true, "303");
+        exit();
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -15,32 +24,36 @@
 </header>
 <main>
     <?php
-    include("os.html");
+    if (!isset($os)) {
+        include("os.html");
+    } else {
+        if ($os == "macos") {
+            include("macos.php");
+            $title = "An Apple a Day";
+            $href = "https://xkcd.com/2161/";
+            $src = "an_apple_a_day_2x.png";
+            $alt = "xkcd_an_apple_a_day_2x";
+            $imgTitle = "Even the powerful, tart Granny Smith cultivar is proving ineffective against new Gran-negative doctors.";
+        } else {
+            include("windows.php");
+            $title = "Estimation";
+            $href = "https://xkcd.com/612/";
+            $src = "estimation.png";
+            $alt = "xkcd_estimation";
+            $imgTitle = "They could say &quot;the connection is probably lost,&quot; but it's more fun to do naive time-averaging to give you hope that if you wait around for 1,163 hours, it will finally finish.";
+        }
+        include("comics.php");
+    }
     ?>
-    <div id="macos" style="display: none;">
-        <?php
-        include("macos.html");
-        include("macos_comics.html");
-        ?>
-    </div>
-    <div id="windows" style="display: none;">
-        <?php
-        include("windows.html");
-        include("windows_comics.html");
-        ?>
-    </div>
 </main>
 <footer class="footer">
     <?php
-    include("footer.html");
+    include("footer.php");
     ?>
 </footer>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <?php
-include("macos_modal_images.php");
-?>
-<?php
-include("windows_modal_images.php");
+include("modal_images.php");
 ?>
 </body>
 </html>
