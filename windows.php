@@ -2,7 +2,7 @@
 global $os;
 $steps = [
     'Rufen Sie die Website von <a target="_blank" href="https://www.python.org">Python</a> auf. Fahren Sie dort mit der Maus über <q>Downloads</q>.',
-    'Klicken Sie auf <q>Python 3.11.x</q>, um den Download zu starten.',
+    'Klicken Sie auf <q>Python 3.12.x</q>, um den Download zu starten.',
     'Warten Sie, bis der Download abgeschlossen ist.',
     'Öffnen Sie das <q>Download-Menü</q>, indem Sie auf <span class="icon"><i class="fa-solid fa-download"></i></span> klicken. Klicken Sie dann auf <span class="icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></span> (<q>Öffnen</q>), um die Installation zu starten.',
     'Wählen Sie <b>zuerst</b> <q>Add python.exe to PATH</q> aus und klicken Sie <b>dann</b> auf <q>Install Now</q>.',

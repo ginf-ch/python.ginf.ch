@@ -2,7 +2,7 @@
 global $os;
 $steps = [
     'Rufen Sie die Website von <a target="_blank" href="https://www.python.org">Python</a> auf. Fahren Sie dort mit der Maus über <q>Downloads</q>.',
-    'Klicken Sie auf <q>Python 3.11.x</q>, um den Download zu starten.',
+    'Klicken Sie auf <q>Python 3.12  .x</q>, um den Download zu starten.',
     'Erlauben Sie den Download.',
     'Warten Sie, bis der Download abgeschlossen ist.',
     'Öffnen Sie die heruntergeladene Datei, um die Installation zu starten.',
