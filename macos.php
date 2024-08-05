@@ -2,7 +2,7 @@
 global $os;
 $steps = [
     'Rufen Sie die Website von <a target="_blank" href="https://www.python.org">Python</a> auf. Fahren Sie dort mit der Maus über <q>Downloads</q>.',
-    'Klicken Sie auf <q>Python 3.12  .x</q>, um den Download zu starten.',
+    'Klicken Sie auf <q>Python 3.12.x</q>, um den Download zu starten.',
     'Erlauben Sie den Download.',
     'Warten Sie, bis der Download abgeschlossen ist.',
     'Öffnen Sie die heruntergeladene Datei, um die Installation zu starten.',
@@ -18,9 +18,9 @@ $steps = [
     'Beenden Sie die Installation, indem Sie auf <q>Schliessen</q> klicken.',
     'Legen Sie die Installationsdatei in den Papierkorb.'
 ];
-$fullOs = "macOS Ventura (13.x)";
+$fullOs = "macOS Sonoma (14.x)";
 $browser = "Safari";
-$osExample = "macOS Monterey";
+$osExample = "macOS Ventura";
 $browserExample = "Google Chrome";
 $numberOfSteps = count($steps);
 include("hinweis.php");

@@ -36,7 +36,7 @@ function echoDatenschutzTags(): void
         Der Inhalt der Website ist lizenziert <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA
             4.0</a>.
         <br>
-        Letzte Aktualisierung: 2023-10-10
+        Letzte Aktualisierung: 2024-08-05
     </p>
 </div>
 <div class="columns is-centered is-hidden-mobile">
